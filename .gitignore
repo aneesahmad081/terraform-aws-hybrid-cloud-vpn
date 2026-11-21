@@ -1,0 +1,77 @@
+
+# ==========================================
+# Terraform - Local Working Directory
+# ==========================================
+**/.terraform/*
+
+# Terraform State Files (Sensitive)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform Variables (May contain secrets)
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!terraform.tfvars.example
+
+# Terraform Plan Files
+*.tfplan
+tfplan
+tfplan.*
+
+# Terraform Crash Logs
+crash.log
+crash.*.log
+
+# Terraform Override Files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ==========================================
+# AWS Credentials & Secrets
+# ==========================================
+.aws/
+credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.secrets
+*.secret
+*.env
+.env
+.env.*
+!.env.example
+
+# VPN Sensitive Configuration
+*psk*
+*private-key*
+vpn-config/*.conf
+vpn-config/*.secrets
+
+# ==========================================
+# IDE / Operating System
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Temporary Files and Logs
+# ==========================================
+*.log
+*.tmp
+*.bak
+*.swp
+temp/
+tmp/
+
+# ==========================================
+# Keep Terraform Dependency Lock File
+# ==========================================
+!.terraform.lock.hcl
